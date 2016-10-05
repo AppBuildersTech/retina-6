@@ -1,0 +1,29 @@
+
+
+* Loss function for linear svm 
+   
+  loss = max(0, false_class1ₛscore - true_class1ₛscore + 1) + 
+             max(0, false_class2ₛscore - true_class2ₛscore + 1) + ...
+
+* after loss find the average loss (divide by N)
+
+* Hinge loss
+
+* what if we square the individual terms in the loss function - Squared hinge loss
+  ** the loss is increasing non linearly  ( y  = x² )
+  ** the minimum loss is zero and the max loss is infinity
+
+*
+
+
+
+
+* L1 and L2 regularizations
+ makes the test score better by choosing better values for W
+
+ eg W1 = [1,0,0,0]
+    w2 = [.25, .25, 25, .25]
+
+L2 regularization would choose W2 over W1  - evenly distributed weights
+Also, W1 in the example completely ignores features 2,3 and 4
+

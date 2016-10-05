@@ -1,0 +1,11 @@
+
+
+* Generalization of multinomial logistic classifier
+* Scores in LR - Unnormalized logistic probablities
+  
+* Get normalized probablities
+  ** Expoenetiate the scores
+  ** Normalize them
+
+* Maximize the log likelihood or minimize -ve log likelihood of correct class
+     ** Li = -log (P(Y = yi | X = xi))    <- Log likelihood
