@@ -81,6 +81,7 @@ class KNearestClassifier:
 
         for i in xrange(num_test):
             for j in xrange(num_train):
+                print "Calculating distance - Test ID : " , i, " Train ID : ", j
                 dists[i, j] = np.sqrt(np.sum(np.square(X[i, : ] - self.X_train[j,:])))
         return dists
 
